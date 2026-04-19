@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Acces</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 100px; }
+    #content { display: none; margin-top: 30px; }
+    input { padding: 10px; }
+    button { padding: 10px 20px; }
+  </style>
+</head>
+<body>
+
+<h2>Introdu parola</h2>
+<input type="password" id="parola" placeholder="Parola...">
+<button onclick="verifica()">Accesează</button>
+
+<div id="content">
+  <h3>Planul</h3>
+  <p>1. trebuie sa te comporti diferit fata de cum erai pe main sau cine te stie la voce si asa<br>
+  eventual un voice changer ari fi perf</p>
+
+  <p>2. trebuie schimbate cont urile de gmail, discord, si orice alta metodalitate de a observa cine suntem cu adevarat</p>
+
+  <p>3. pozele nu trebuie sa fie aceleasi ca pe conturile astea</p>
+
+  <p>4. daca vrem sa folosim cont urile astea cand nu ne jucam mc nu trebuie sa ne comportam ca pe conturile de staff si sa revenim la normal</p>
+
+  <p>5. nu trebuie sa folosim aceleasi cont uri de steam daca jucam mc in caz ca iti citeste mai multe pt log uri, eventual oprit steam u cand jucam</p>
+
+  <p>6. hwid-ul se resetaza la schimbarea de windows deci nu vad unde ar fi o problema</p>
+
+  <p>7. nu iti treci pe windows u nou informatii despre cont urile main banate si etc</p>
+
+  <p>8. trebuie sa parem incepatori ca staff mai ales tu ca poate stie shadow ca ai op de ex si stii comenzi si etc</p>
+</div>
+
+<script>
+function verifica() {
+  const parola = document.getElementById("parola").value;
+  if (parola === "planulcelmare") {
+    document.getElementById("content").style.display = "block";
+  } else {
+    alert("Parolă greșită!");
+  }
+}
+</script>
+
+</body>
+</html>
